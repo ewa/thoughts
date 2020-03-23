@@ -21,7 +21,7 @@ The latest "authoritative" estimate of CFR that I've seen is from a WHO briefing
 
 It seems reasonable to say at this point that the _aggregate_ CFR is somewhere in the 1.5% to 3.5% range, for people who are sick enough to seek medical help and are recognized, and/or are successfully recognized at some kind of screening.
 
-## (Non-)Detection
+## (Non-) Detection
 
 Because I'm going to be talking about the spread of the virus later, I really want to look at the overall risk to anybody who is infected by it, whether or not they're sick enough, and in the right ways, to be recognized.  This paper[7] discusses the challenge of detection in the specific context of screening travelers.  This report [8] estimates that between 63% and 73% of the cases *exported* from China have been undetected, which is a decent proxy for the detection rate in general. [9] estimates the non-detection rate in Italy at 72% (confidence interval 61% to 79%). The other estimates I've found suggest that between 50% and 90% of cases are *not* detected, which in turn suggests that the infected-individual fatality is rate is between 10% and 50% of the reported fatality rates.  
 
@@ -40,7 +40,7 @@ Here are age-specific estimated CFRs for the epidemic in China[4].
 <!-- | As reported                 Adjusted for estimated non-detection rates -->
 <!-- |-------------                 ------------------------------------------ -->
 
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; *As reported* &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; *Adjusted for estimated non-detection rates* |
+| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; **As reported** &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; **Adjusted for estimated non-detection rates** &nbsp;&nbsp;&nbsp;&nbsp; |
 
 | Age (yr) | Est'd CFR(%)    | Low (50%) | Mid (72%) | High(90%)  |
 |-----     | --------:       |-------    |-------    |-------     |
@@ -59,8 +59,8 @@ There's nothing radically shocking here:  If you're a teenager or young adult, i
 Taking the liberty of cherry-picking what seem like "pretty reasonable" middle values of the various ranges, I get to something like this:
 
 | Who      | Low-end CFR    | High-end CFR   |
-|---       -----------      ------------     |
-| Everyone lumped together   |      0.35%    |          1%       (I left off the lowest and highest values from our CFR x Detection square)|
+|---       |-----------     |------------    |
+| Everyone lumped together   |      0.35%    |  1%  (I left off the lowest and highest values from our CFR x Detection square) |
 | 0- 9 yr   |       0	   |    0            |
 | 10-39 yr  |  0.02%	   |    0.1%         |
 | 40-49 yr  |  0.04%	   |    0.2%         |
@@ -78,7 +78,7 @@ The other key question is: How likely are you to get it at all?
 If the epidemic is successfully contained, you could be very unlikely to contract the virus.  I'm going to go out on a limb and say that seems pretty unlikely[12]:  There are confirmed cases on every continent except Antarctica, with community transmission and increasing numbers almost everywhere.  From what I've heard, China and South Korea have implemented robust -- some would say draconian -- surveillance and isolation measures, but nobody else is really on the ball.  That's not an insult, it's just that spreading is what viruses do, all of humanity is one big buffet of susceptible individuals, and fully shutting down transmission is a high bar.  So, assume the cat's out the bag. The virus is likely to spread until there's nowhere left to go.  As far as I know, fighting off the infection once confers immunity against future reinfection, so the pool of "infectible" people shrinks as infection progresses.  That effectively reduces the reproduction rate because more and more of the people who might otherwise catch the infection are immune.  That means the epidemic can die out before *everyone* is infected because there aren't enough susceptible people left to sustain it.  The estimates I've seen suggest that for SARS-CoV-2, that threshold is around 50% [13], with some projections ranging from about 30% to 70%. If we apply these to our previous estimates, we get something like this:
 
 | Who           |Low-end CFR * 30%   | High-end CFR * 70%    |  Age-Specific Death Rate |
-| ---           |-----------------   -------------------     |  ----------------------- |
+| ---           |-----------------   |------------------     |  ----------------------- |
 | Everyone lumped  together  |  0.10%  | 0.7%          | all    0.87%                   |
 | 0- 9 yr       |     0		 |   0                     | 1-4:   0.024%,   5-9: 0.012%   |
 | 10-39 yr	    | 0.006%	 |   0.07%                 | 15-24: 0.074%, 25-34: 0.133%   |
@@ -97,7 +97,7 @@ I meant to write a conclusion, but I can't:  What those numbers mean to me might
 
 1. Sort of.  CFR is an aggregate, retrospective statistic about the infections and deaths that have happened to date.  Since any given person who gets infected may be in a very different situation than the previous infected people who went into the CFR, the new person might have a correspondingly different personal prognosis.  But it's probably an OK first approximation for the population as a whole.
 
-2."WHO Director-General's opening remarks at the media briefing on COVID-19 - 3 March 2020" Mar. 03 2020, available at 	     https://www.who.int/dg/speeches/detail/who-director-general-s-opening-remarks-at-the-media-briefing-on-covid-19---3-march-2020
+2. "WHO Director-General's opening remarks at the media briefing on COVID-19 - 3 March 2020" Mar. 03 2020, available at 	     https://www.who.int/dg/speeches/detail/who-director-general-s-opening-remarks-at-the-media-briefing-on-covid-19---3-march-2020
 
 3. Porcheddu, R., C. Serra, D. Kelvin, N. Kelvin, and S. Rubino. “Similarity in Case Fatality Rates (CFR) of COVID-19/SARS-COV-2 in Italy and China”. The Journal of Infection in Developing Countries, Vol. 14, no. 02, Feb. 2020, pp. 125-8, doi:10.3855/jidc.12600.
 
@@ -107,11 +107,11 @@ I meant to write a conclusion, but I can't:  What those numbers mean to me might
 5. https://www.who.int/emergencies/diseases/novel-coronavirus-2019/global-research-on-novel-coronavirus-2019-ncov
 
 
-6. by Shi Zhao, Salihu S. Musa,Qianying Lin, et. al. "Estimating the Unreported Number of Novel Coronavirus (2019-nCoV) Cases in China in the First Half of January 2020: A Data-Driven Modelling Analysis of the Early Outbreak" J. Clin. Med. 2020, 9(2), 388; available at  https://doi.org/10.3390/jcm9020388
+6. Shi Zhao, Salihu S. Musa,Qianying Lin, et. al. "Estimating the Unreported Number of Novel Coronavirus (2019-nCoV) Cases in China in the First Half of January 2020: A Data-Driven Modelling Analysis of the Early Outbreak" J. Clin. Med. 2020, 9(2), 388; available at  https://doi.org/10.3390/jcm9020388
 
 7. Katelyn Gostic, Ana CR Gomez, Riley O Mummah, Adam J Kucharski, James, and Lloyd-Smith eLife "Estimated effectiveness of symptom and risk screening to prevent the spread of COVID-19" EPIDEMIOLOGY AND GLOBAL HEALTH 2020;9:e55570  DOI: 10.7554/eLife.55570
 
-8.Sangeeta Bhatia, Natsuko Imai, Gina Cuomo-Dannenburg, et. al. "Report 6: Relative sensitivity of international surveillance." WHO Collaborating Centre for Infectious Disease Modelling, MRC Centre for Global Infectious Disease Analysis, Abdul Latif Jameel Institute for Disease and Emergency Analytics (J-IDEA), Imperial College London.  Feb. or maybe Mar. 2020. Available at https://www.imperial.ac.uk/media/imperial-college/medicine/sph/ide/gida-fellowships/Imperial-College---COVID-19---Relative-Sensitivity-International-Cases.pdf
+8. Sangeeta Bhatia, Natsuko Imai, Gina Cuomo-Dannenburg, et. al. "Report 6: Relative sensitivity of international surveillance." WHO Collaborating Centre for Infectious Disease Modelling, MRC Centre for Global Infectious Disease Analysis, Abdul Latif Jameel Institute for Disease and Emergency Analytics (J-IDEA), Imperial College London.  Feb. or maybe Mar. 2020. Available at https://www.imperial.ac.uk/media/imperial-college/medicine/sph/ide/gida-fellowships/Imperial-College---COVID-19---Relative-Sensitivity-International-Cases.pdf
 
 9. Ashleigh Tuite, Victoria Ng, Erin Rees, and David Fisman. "Estimation of COVID-19 outbreak size in Italy based on international case exportations" Mar. 6 2020. Preprint at medRxiv doi: https://doi.org/10.1101/2020.03.02.20030049 available at https://www.medrxiv.org/content/10.1101/2020.03.02.20030049v1
 
@@ -128,4 +128,4 @@ I meant to write a conclusion, but I can't:  What those numbers mean to me might
 15. Kochanek KD, Murphy SL, Xu JQ, Arias E. "Deaths: Final data for 2017." National Vital
 Statistics Reports; vol 68 no 9. Hyattsville, MD: National Center for Health Statistics. 2019. Available at: https://www.cdc.gov/nchs/data/nvsr/nvsr68/nvsr68_09-508.pdf
 
-16: I see CFR used to refer to the fatality rate for either the population that's explicitly identified as infected, or the entire population of infected people, whether they're recognized or not.  That is, some empirical work attempts to estimate and compensate for the undetected population, while some seems to (knowingly) pass them over, leaving it to the reader to take this into account.  My usage is inconsistent, but all the work I reference is in the second category. 
+16. I see CFR used to refer to the fatality rate for either the population that's explicitly identified as infected, or the entire population of infected people, whether they're recognized or not.  That is, some empirical work attempts to estimate and compensate for the undetected population, while some seems to (knowingly) pass them over, leaving it to the reader to take this into account.  My usage is inconsistent, but all the work I reference is in the second category. 
