@@ -1,4 +1,4 @@
-
+	
 
 
 # COVID-19 in data (in the US):  How bad is it?
@@ -129,3 +129,49 @@ I meant to write a conclusion, but I can't:  What those numbers mean to me might
 Statistics Reports; vol 68 no 9. Hyattsville, MD: National Center for Health Statistics. 2019. Available at: https://www.cdc.gov/nchs/data/nvsr/nvsr68/nvsr68_09-508.pdf
 
 16. I see CFR used to refer to the fatality rate for either the population that's explicitly identified as infected, or the entire population of infected people, whether they're recognized or not.  That is, some empirical work attempts to estimate and compensate for the undetected population, while some seems to (knowingly) pass them over, leaving it to the reader to take this into account.  My usage is inconsistent, but all the work I reference is in the second category. 
+
+# Revisited, 1 Year On
+
+## Age-Specfic Infection Fatality Rates
+
+| Who       | "My" estimates, March 2020   | Brazeau[^1] estimates 
+|---        |-----------       |------------- 
+| Aggregate |   0.35% --   1%  | 1.06% (0.73% -- 1.65%)
+| 0- 9 yr   |      0  --   0   | 0.005% (0.00% -- 0.045%)
+| 10-39 yr  |  0.02%  -- 0.1%  | 0.04% (0.003% -- 0.44%)
+| 40-49 yr  |  0.04%  -- 0.2%  | 0.19% (0.025% -- 1.62%)
+| 50-59 yr  |  0.13%  -- 0.36% | 0.46% (0.075% -- 2.9%)
+| 60-69 yr  |  0.36%  -- 1.8%  | 1.14% (0.26% -- 5.0%)
+| 70-79 yr  |  0.8%	  -- 4%    | 2.78% (0.92% -- 8.5%)
+| ≥80 yr    |  2.03%  -- 10.15% | 9.9% (5.2% -- 19.3%)
+
+
+"Brazeau" estimate column refers to the "IFR (%) with Seroreversion (95% PI)" column of Table 2 "Pooled-Estimates of the Infection Fatality Rate" from [^1].  "Aggregate" here is the "High-Income Country (HIC)" overall. The report uses five-year age brackets; the values given here for 10+ year brackets are simple (unweighed) averages of the corresponding rows from the report.  That's absolutely *not* statistically valid, but it's not terrible for a rough summary if one doesn't abuse it too much.
+
+| Who      | Levin[^2] estimates
+|--        |-------
+|  0-34 yr | 0.004% (0.003% -- 0.005%)
+| 35-44 yr | 0.068% (0.058% – 0.078%)
+| 45-54 yr | 0.23% (0.20% – 0.26%)
+| 55-64 yr | 0.75% (0.66% – 0.87%)
+| 65-74 yr | 2.5% (2.1% – 3.0%)
+| 75-84 yr | 8.5% (6.9% – 10.4%)
+| ≥85 yr   | 28.3% (21.8% – 36.6%)
+
+Levin et al [^2] did a different meta-analysis, and chose to give their results by age brackets that perversely fail to align with the ones I used previously, so I them here separately.  The estimates shown here are those in Table 3 "Age-specific fatality rates for COVID-19 infections vs. acci- dental deaths (%)."
+
+## U.S. Mortality
+
+At the time of writing (February 17, 2021), the CDC estimates that there have been 486,466 deaths in the united[^3] and project a total of 530,000 to 559,000 as of March 13 2021[^4].
+
+## Notes
+
+[^1]: Brazeau, N, R Verity, S Jenks, H Fu, C Whittaker, P Winskill, I Dorigatti, et al. “COVID-19 Infection Fatality Ratio: Estimates from Seroprevalence.” Imperial College London, October 29, 2020. https://doi.org/10.25561/83545.
+
+
+[^2]: Levin, Andrew T., William P. Hanage, Nana Owusu-Boaitey, Kensington B. Cochran, Seamus P. Walsh, and Gideon Meyerowitz-Katz. “Assessing the Age Specificity of Infection Fatality Rates for COVID-19: Systematic Review, Meta-Analysis, and Public Policy Implications.” European Journal of Epidemiology 35, no. 12 (December 1, 2020): 1123–38. https://doi.org/10.1007/s10654-020-00698-1.
+
+[^3]: Centers for Disease Control and Prevention (CDC). “COVID Data Tracker (United States COVID-19 Cases and Deaths by State),” March 28, 2020. https://covid.cdc.gov/covid-data-tracker.
+
+
+[^4]: Centers for Disease Control and Prevention (CDC). “Observed and Forecasted New and Total Reported COVID-19 Deaths as of February 15, 2021,” February 17, 2021. https://www.cdc.gov/coronavirus/2019-ncov/covid-data/forecasting-us.html.
