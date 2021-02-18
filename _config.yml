@@ -1,6 +1,9 @@
 title: "COVID-19 in data: How bad is it?"
 show_dir_listing: TRUE
 
+plugins:
+  - "jekyll-github-metadata"
+
 #theme: jekyll-theme-minimal
 
 # plugins:

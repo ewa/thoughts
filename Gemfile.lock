@@ -1,4 +1,5 @@
 GEM
+  remote: https://rubygems.org/
   specs:
     activesupport (6.0.3.1)
       concurrent-ruby (~> 1.0, >= 1.0.2)
@@ -18,6 +19,7 @@ GEM
     concurrent-ruby (1.1.6)
     dnsruby (1.61.3)
       addressable (~> 2.5)
+    dotenv (2.7.6)
     em-websocket (0.5.1)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
@@ -247,7 +249,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  dotenv
   github-pages (~> 212)
+  jekyll-github-metadata
 
 BUNDLED WITH
    2.1.4

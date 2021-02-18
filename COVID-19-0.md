@@ -3,7 +3,9 @@ layout: default
 title: "COVID-19 in data: How bad is it?"
 ---
 
-# COVID-19 in data (in the US):  How bad is it?
+# {{page.title}}
+
+Rev {{site.github.build_revision}}
 
 In this note, I work to synthesize a few different kinds of epidemiological results into aggregate "what might the (range of plausible projections for the) risk be to a given person in a given age range?" estimates.  In particular, the result most often reported seems the case fatality rate (CFR), as estimated in some specific place and time.  This captures the fatality rate for people who (a) have already contracted COVID-19, and (b) have been recognized as such. If we wish to extend the CFR to some notion of risk to an arbitrary resident, those last two points make a big difference.  In this note I factor in estimates of what fraction people who are infected with the virus (SARS-CoV-2) go unnoticed in CFR estimates, and what fraction are likely to become infected at all.  There are multiple studies on each of these factors, and individual studies often present a range of estimated or project values.  I have taken into account high and low estimates for each factor (though sometimes excluding a few that look like outliers) and considered various combinations of each.  The result is a range of "reasonable" risk estimates that are consistent with the current research that I am aware of.
 
