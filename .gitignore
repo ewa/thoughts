@@ -1,0 +1,10 @@
+# The usual editor junk
+*~
+\#.*
+.#* 
+
+# Jekyll / gem / bundle auto-generated files
+
+# Preview
+_site/
+

@@ -1,4 +1,7 @@
-theme: jekyll-theme-minimal     
+title: "COVID-19 in data: How bad is it?"
+show_dir_listing: TRUE
+
+#theme: jekyll-theme-minimal
 
 # plugins:
 #   - jekyll-remote-theme

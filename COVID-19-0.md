@@ -1,9 +1,19 @@
-	
-
+---
+layout: default
+title: "COVID-19 in data: How bad is it?"
+---
 
 # COVID-19 in data (in the US):  How bad is it?
 
 In this note, I work to synthesize a few different kinds of epidemiological results into aggregate "what might the (range of plausible projections for the) risk be to a given person in a given age range?" estimates.  In particular, the result most often reported seems the case fatality rate (CFR), as estimated in some specific place and time.  This captures the fatality rate for people who (a) have already contracted COVID-19, and (b) have been recognized as such. If we wish to extend the CFR to some notion of risk to an arbitrary resident, those last two points make a big difference.  In this note I factor in estimates of what fraction people who are infected with the virus (SARS-CoV-2) go unnoticed in CFR estimates, and what fraction are likely to become infected at all.  There are multiple studies on each of these factors, and individual studies often present a range of estimated or project values.  I have taken into account high and low estimates for each factor (though sometimes excluding a few that look like outliers) and considered various combinations of each.  The result is a range of "reasonable" risk estimates that are consistent with the current research that I am aware of.
+
+
+## Contents
+
+* Blah
+{:toc}	
+
+
 
 ## Notes
 
@@ -131,6 +141,8 @@ Statistics Reports; vol 68 no 9. Hyattsville, MD: National Center for Health Sta
 16. I see CFR used to refer to the fatality rate for either the population that's explicitly identified as infected, or the entire population of infected people, whether they're recognized or not.  That is, some empirical work attempts to estimate and compensate for the undetected population, while some seems to (knowingly) pass them over, leaving it to the reader to take this into account.  My usage is inconsistent, but all the work I reference is in the second category. 
 
 # Revisited, 1 Year On
+
+As of now (mid-February, 2021) it's been a year since started working on what would end up being this page.  My goal at the time was to help calibrate my own expectations at a time when there wasn't a lot of "big picture" information available.  Since then, it's felt like the actual course of the pandemic has been fairly consistent with those estimates, and this section is an attempt at checking that.  This is a work in progress, so what you see here is neither complete nor final. 
 
 ## Age-Specfic Infection Fatality Rates
 
