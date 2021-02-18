@@ -1,5 +1,7 @@
 title: "COVID-19 in data: How bad is it?"
 show_dir_listing: TRUE
+markdown: kramdown
+footnote_nr: 72
 
 plugins:
   - "jekyll-github-metadata"
