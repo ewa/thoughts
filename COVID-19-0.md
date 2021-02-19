@@ -5,9 +5,9 @@ title: "COVID-19 in data: How bad is it?"
 
 # {{page.title}}
 
-Rev {{site.github.build_revision}}
+<!-- Rev {{site.github.build_revision}} -->
 
-In this note, I work to synthesize a few different kinds of epidemiological results into aggregate "what might the (range of plausible projections for the) risk be to a given person in a given age range?" estimates.  In particular, the result most often reported seems the case fatality rate (CFR), as estimated in some specific place and time.  This captures the fatality rate for people who (a) have already contracted COVID-19, and (b) have been recognized as such. If we wish to extend the CFR to some notion of risk to an arbitrary resident, those last two points make a big difference.  In this note I factor in estimates of what fraction people who are infected with the virus (SARS-CoV-2) go unnoticed in CFR estimates, and what fraction are likely to become infected at all.  There are multiple studies on each of these factors, and individual studies often present a range of estimated or project values.  I have taken into account high and low estimates for each factor (though sometimes excluding a few that look like outliers) and considered various combinations of each.  The result is a range of "reasonable" risk estimates that are consistent with the current research that I am aware of.
+In this note, I work to synthesize a few different kinds of epidemiological results into aggregate "what might the (range of plausible projections for the) risk be to a given person in a given age range?" estimates.  In particular, the result most often reported seems the case fatality rate (CFR), as estimated in some specific place and time.  This captures the fatality rate for people who (a) have already contracted COVID-19, and (b) have been recognized as such[^1]. If we wish to extend the CFR to some notion of risk to an arbitrary resident, those last two points make a big difference.  In this note I factor in estimates of what fraction people who are infected with the virus (SARS-CoV-2) go unnoticed in CFR estimates, and what fraction are likely to become infected at all.  There are multiple studies on each of these factors, and individual studies often present a range of estimated or project values.  I have taken into account high and low estimates for each factor (though sometimes excluding a few that look like outliers) and considered various combinations of each.  The result is a range of "reasonable" risk estimates that are consistent with the current research that I am aware of.
 
 
 ## Contents
@@ -49,12 +49,8 @@ As a generic averaged human, your chances of dying *if you contract the virus* a
 
 Here are age-specific estimated CFRs for the epidemic in China[^4].   
 
-<!-- | As reported                 Adjusted for estimated non-detection rates -->
-<!-- |-------------                 ------------------------------------------ -->
 
-| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; **As reported** &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; **Adjusted for estimated non-detection rates** &nbsp;&nbsp;&nbsp;&nbsp; |
-
-| Age (yr) | Est'd CFR(%)    | Low (50%) | Mid (72%) | High(90%)  |
+| Age (yr)[^as_rep] | Est'd CFR(%)[^as_rep]    | Low (50%)[^adj] | Mid (72%)[^adj] | High(90%)[^adj]  | 
 |-----     | --------:       |-------    |-------    |-------     |
 | 0–9      |  −              | -         |    -      |    -       |
 | 10–19    | 0.2             | 0.1%      |  0.05%    |  0.02%     |
@@ -65,6 +61,9 @@ Here are age-specific estimated CFRs for the epidemic in China[^4].
 | 60–69    | 3.6			 | 1.8%	     |  1.01%	 |  0.36%     |
 | 70–79    | 8.0			 | 4%	     |  2.34%	 |  0.8%      |
 | ≥80      | 20.3		     | 10.15%	 |  5.68%	 |  2.03%     |
+
+[^as_rep]: As reported.
+[^adj]: Adjusted for estimated non-detection rates.
 
 There's nothing radically shocking here:  If you're a teenager or young adult, in the best case your risk is 0.02%, or 1/5000.  If you're over 80, in the worst case your risk is about 10%, or 1/10.  And all the other cases are in between.  The age-specific CFRs could be split into low, high, and middle estimates just as we did with the overall CFR, but I haven't seen enough research on that to make guesses.  And that table doesn't need to be three times as large and ten times as confusing.
 
@@ -104,42 +103,6 @@ The age-specific death rate, included for comparison, is the fraction of the pop
 
 I meant to write a conclusion, but I can't:  What those numbers mean to me might be very different from what they mean to you.
 
-
-## Notes
-
-[^1]: Sort of.  CFR is an aggregate, retrospective statistic about the infections and deaths that have happened to date.  Since any given person who gets infected may be in a very different situation than the previous infected people who went into the CFR, the new person might have a correspondingly different personal prognosis.  But it's probably an OK first approximation for the population as a whole.
-
-[^2]: "WHO Director-General's opening remarks at the media briefing on COVID-19 - 3 March 2020" Mar. 03 2020, available at 	     https://www.who.int/dg/speeches/detail/who-director-general-s-opening-remarks-at-the-media-briefing-on-covid-19---3-march-2020
-
-[^3]: Porcheddu, R., C. Serra, D. Kelvin, N. Kelvin, and S. Rubino. “Similarity in Case Fatality Rates (CFR) of COVID-19/SARS-COV-2 in Italy and China”. The Journal of Infection in Developing Countries, Vol. 14, no. 02, Feb. 2020, pp. 125-8, doi:10.3855/jidc.12600.
-
-[^4]: The Novel Coronavirus Pneumonia Emergency Response Epidemiology Team. "The Epidemiological Characteristics of an Outbreak of 2019 Novel Coronavirus Diseases (COVID-19) — China, 2020." China CDC Weekly Vol. 2, no. x, Feb. 14 2020, available at https://github.com/cmrivers/ncov/blob/master/COVID-19.pdf
-
-
-[^5]: https://www.who.int/emergencies/diseases/novel-coronavirus-2019/global-research-on-novel-coronavirus-2019-ncov
-
-[^6]: Shi Zhao, Salihu S. Musa,Qianying Lin, et. al. "Estimating the Unreported Number of Novel Coronavirus (2019-nCoV) Cases in China in the First Half of January 2020: A Data-Driven Modelling Analysis of the Early Outbreak" J. Clin. Med. 2020, 9(2), 388; available at  https://doi.org/10.3390/jcm9020388
-
-[^7]: Katelyn Gostic, Ana CR Gomez, Riley O Mummah, Adam J Kucharski, James, and Lloyd-Smith eLife "Estimated effectiveness of symptom and risk screening to prevent the spread of COVID-19" EPIDEMIOLOGY AND GLOBAL HEALTH 2020;9:e55570  DOI: 10.7554/eLife.55570
-
-[^8]: Sangeeta Bhatia, Natsuko Imai, Gina Cuomo-Dannenburg, et. al. "Report 6: Relative sensitivity of international surveillance." WHO Collaborating Centre for Infectious Disease Modelling, MRC Centre for Global Infectious Disease Analysis, Abdul Latif Jameel Institute for Disease and Emergency Analytics (J-IDEA), Imperial College London.  Feb. or maybe Mar. 2020. Available at https://www.imperial.ac.uk/media/imperial-college/medicine/sph/ide/gida-fellowships/Imperial-College---COVID-19---Relative-Sensitivity-International-Cases.pdf
-
-[^9]: Ashleigh Tuite, Victoria Ng, Erin Rees, and David Fisman. "Estimation of COVID-19 outbreak size in Italy based on international case exportations" Mar. 6 2020. Preprint at medRxiv doi: https://doi.org/10.1101/2020.03.02.20030049 available at https://www.medrxiv.org/content/10.1101/2020.03.02.20030049v1
-
-[^10]: Independent studies on China, a portfolio of countries receiving travelers from China, and Italy have all come up with 72% plus or minus a couple percent, so I'm calling this the most likely, but that's still a personal judgment call.
-
-[^11]: Ana Sandoiu, fact-checked by Isabel Godfrey. "Why are COVID-19 death rates so hard to calculate? Experts weigh in" Mar. 5 2020. Medical News Today, on-line article.  Available at https://www.medicalnewstoday.com/articles/why-are-covid-19-death-rates-so-hard-to-calculate-experts-weigh-in#Death-rate-may-only-be-known-at-the-end
-
-[^12]: Hamblin, James. “You’re Likely to Get the Coronavirus.” The Atlantic, February 24, 2020. https://www.theatlantic.com/health/archive/2020/02/covid-vaccine/607000/.
-
-[^13]: Flahault, A. (2020). Has China faced only a herald wave of SARS-CoV-2? The Lancet, 0(0). https://doi.org/10.1016/S0140-6736(20)30521-3
-
-[^14]: https://www.cdc.gov/nchs/products/databriefs/db328.htm, https://www.cdc.gov/nchs/data/databriefs/db328_tables-508.pdf#5
-
-[^15]: Kochanek KD, Murphy SL, Xu JQ, Arias E. "Deaths: Final data for 2017." National Vital Statistics Reports; vol 68 no 9. Hyattsville, MD: National Center for Health Statistics. 2019. Available at: https://www.cdc.gov/nchs/data/nvsr/nvsr68/nvsr68_09-508.pdf
-
-[^16]: I see CFR used to refer to the fatality rate for either the population that's explicitly identified as infected, or the entire population of infected people, whether they're recognized or not.  That is, some empirical work attempts to estimate and compensate for the undetected population, while some seems to (knowingly) pass them over, leaving it to the reader to take this into account.  My usage is inconsistent, but all the work I reference is in the second category. 
-
 # Revisited, 1 Year On
 
 As of now (mid-February, 2021) it's been a year since started working on what would end up being this page.  My goal at the time was to help calibrate my own expectations at a time when there wasn't a lot of "big picture" information available.  Since then, it's felt like the actual course of the pandemic has been fairly consistent with those estimates, and this section is an attempt at checking that.  This is a work in progress, so what you see here is neither complete nor final. 
@@ -177,6 +140,41 @@ Levin et al [^levin20assessing] did a different meta-analysis, and chose to give
 At the time of writing (February 17, 2021), the CDC estimates that there have been 486,466 deaths in the United States[^CDC-2021-02-17-cases-and-deaths] and project a total of 530,000 to 559,000 as of March 13 2021[^CDC-2021-02-17-forecast-deaths].
 
 ## Notes
+
+
+[^1]: Sort of.  CFR is an aggregate, retrospective statistic about the infections and deaths that have happened to date.  Since any given person who gets infected may be in a very different situation than the previous infected people who went into the CFR, the new person might have a correspondingly different personal prognosis.  But it's probably an OK first approximation for the population as a whole.
+
+[^2]: "WHO Director-General's opening remarks at the media briefing on COVID-19 - 3 March 2020" Mar. 03 2020, available at 	     https://www.who.int/dg/speeches/detail/who-director-general-s-opening-remarks-at-the-media-briefing-on-covid-19---3-march-2020
+
+[^3]: Porcheddu, R., C. Serra, D. Kelvin, N. Kelvin, and S. Rubino. “Similarity in Case Fatality Rates (CFR) of COVID-19/SARS-COV-2 in Italy and China”. The Journal of Infection in Developing Countries, Vol. 14, no. 02, Feb. 2020, pp. 125-8, doi:10.3855/jidc.12600.
+
+[^4]: The Novel Coronavirus Pneumonia Emergency Response Epidemiology Team. "The Epidemiological Characteristics of an Outbreak of 2019 Novel Coronavirus Diseases (COVID-19) — China, 2020." China CDC Weekly Vol. 2, no. x, Feb. 14 2020, available at https://github.com/cmrivers/ncov/blob/master/COVID-19.pdf
+
+
+[^5]: https://www.who.int/emergencies/diseases/novel-coronavirus-2019/global-research-on-novel-coronavirus-2019-ncov
+
+[^6]: Shi Zhao, Salihu S. Musa,Qianying Lin, et. al. "Estimating the Unreported Number of Novel Coronavirus (2019-nCoV) Cases in China in the First Half of January 2020: A Data-Driven Modelling Analysis of the Early Outbreak" J. Clin. Med. 2020, 9(2), 388; available at  https://doi.org/10.3390/jcm9020388
+
+[^7]: Katelyn Gostic, Ana CR Gomez, Riley O Mummah, Adam J Kucharski, James, and Lloyd-Smith eLife "Estimated effectiveness of symptom and risk screening to prevent the spread of COVID-19" EPIDEMIOLOGY AND GLOBAL HEALTH 2020;9:e55570  DOI: 10.7554/eLife.55570
+
+[^8]: Sangeeta Bhatia, Natsuko Imai, Gina Cuomo-Dannenburg, et. al. "Report 6: Relative sensitivity of international surveillance." WHO Collaborating Centre for Infectious Disease Modelling, MRC Centre for Global Infectious Disease Analysis, Abdul Latif Jameel Institute for Disease and Emergency Analytics (J-IDEA), Imperial College London.  Feb. or maybe Mar. 2020. Available at https://www.imperial.ac.uk/media/imperial-college/medicine/sph/ide/gida-fellowships/Imperial-College---COVID-19---Relative-Sensitivity-International-Cases.pdf
+
+[^9]: Ashleigh Tuite, Victoria Ng, Erin Rees, and David Fisman. "Estimation of COVID-19 outbreak size in Italy based on international case exportations" Mar. 6 2020. Preprint at medRxiv doi: https://doi.org/10.1101/2020.03.02.20030049 available at https://www.medrxiv.org/content/10.1101/2020.03.02.20030049v1
+
+[^10]: Independent studies on China, a portfolio of countries receiving travelers from China, and Italy have all come up with 72% plus or minus a couple percent, so I'm calling this the most likely, but that's still a personal judgment call.
+
+[^11]: Ana Sandoiu, fact-checked by Isabel Godfrey. "Why are COVID-19 death rates so hard to calculate? Experts weigh in" Mar. 5 2020. Medical News Today, on-line article.  Available at https://www.medicalnewstoday.com/articles/why-are-covid-19-death-rates-so-hard-to-calculate-experts-weigh-in#Death-rate-may-only-be-known-at-the-end
+
+[^12]: Hamblin, James. “You’re Likely to Get the Coronavirus.” The Atlantic, February 24, 2020. https://www.theatlantic.com/health/archive/2020/02/covid-vaccine/607000/.
+
+[^13]: Flahault, A. (2020). Has China faced only a herald wave of SARS-CoV-2? The Lancet, 0(0). https://doi.org/10.1016/S0140-6736(20)30521-3
+
+[^14]: https://www.cdc.gov/nchs/products/databriefs/db328.htm, https://www.cdc.gov/nchs/data/databriefs/db328_tables-508.pdf#5
+
+[^15]: Kochanek KD, Murphy SL, Xu JQ, Arias E. "Deaths: Final data for 2017." National Vital Statistics Reports; vol 68 no 9. Hyattsville, MD: National Center for Health Statistics. 2019. Available at: https://www.cdc.gov/nchs/data/nvsr/nvsr68/nvsr68_09-508.pdf
+
+[^16]: I see CFR used to refer to the fatality rate for either the population that's explicitly identified as infected, or the entire population of infected people, whether they're recognized or not.  That is, some empirical work attempts to estimate and compensate for the undetected population, while some seems to (knowingly) pass them over, leaving it to the reader to take this into account.  My usage is inconsistent, but all the work I reference is in the second category. 
+
 
 [^brazeau20supplementary]: Brazeau, N, R Verity, S Jenks, H Fu, C Whittaker, P Winskill, I Dorigatti, et al. “COVID-19 Infection Fatality Ratio: Estimates from Seroprevalence.” Imperial College London, October 29, 2020. https://doi.org/10.25561/83545.
 
