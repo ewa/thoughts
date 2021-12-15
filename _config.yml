@@ -1,5 +1,7 @@
 title: "Eric's Assorted Thoughts"
 show_dir_listing: FALSE
-
+remote_theme: pages-themes/primer@v0.6.0
 plugins:
-  - "jekyll-github-metadata"
+  - jekyll-github-metadata
+  - jekyll-remote-theme
+
