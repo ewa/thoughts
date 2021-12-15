@@ -3,8 +3,13 @@
 \#.*
 .#* 
 
-# Jekyll / gem / bundle auto-generated files
+# Credentials / tokens
+.env
 
-# Preview
+
+# Jekyll / gem / bundle auto-generated files
+Gemfile.lock
+
+# The site (or local "preview" version)
 _site/
 

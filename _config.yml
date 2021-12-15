@@ -1,5 +1,5 @@
-title: "COVID-19 in data: How bad is it?"
-show_dir_listing: TRUE
+title: "Eric's Assorted Thoughts"
+show_dir_listing: FALSE
 
 plugins:
   - "jekyll-github-metadata"
